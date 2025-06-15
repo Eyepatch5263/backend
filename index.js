@@ -18,10 +18,11 @@ const { executePython } = require("./src/ExecutePython");
 const { executeJava } = require("./src/ExecuteJava");
 const { aiCodeReview } = require('./src/aiCodeReview');
 const corsOptions = {
-  origin: "https://tourmaline-cupcake-2ca8a5.netlify.app", // Change to your frontend domain in production
+  origin: ["https://tourmaline-cupcake-2ca8a5.netlify.app","https://codemaster69.in"], // Change to your frontend domain in production
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
+  optionsSuccessStatus: 200 // For legacy browser support
 };
 app.use(bodyParser.json());
 app.use(cors(corsOptions));
