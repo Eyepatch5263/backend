@@ -18,7 +18,7 @@ const { executePython } = require("./src/ExecutePython");
 const { executeJava } = require("./src/ExecuteJava");
 const { aiCodeReview } = require('./src/aiCodeReview');
 const corsOptions = {
-  origin: "http://localhost:3000", // Change to your frontend domain in production
+  origin: "https://tourmaline-cupcake-2ca8a5.netlify.app", // Change to your frontend domain in production
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
